@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: eportal-web2pdf
-        image: ghcr.io/zzh-gitops-bootcamp/eportal-web2pdf:1
+        image: ghcr.io/zzh-gitops-playground/eportal-web2pdf:1
         ports:
         - containerPort: 8080
