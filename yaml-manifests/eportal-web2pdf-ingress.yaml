@@ -15,11 +15,11 @@ spec:
               service:
                 name: eportal-web2pdf-service
                 port:
-                  number: 70
+                  number: 80
           - path: /eportal-web2pdf
             pathType: Prefix
             backend:
               service:
                 name: eportal-web2pdf-service
                 port:
-                  number: 70
+                  number: 80
