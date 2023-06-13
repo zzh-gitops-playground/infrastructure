@@ -16,4 +16,4 @@ spec:
       - name: eportal-web2pdf
         image: ghcr.io/zzh-gitops-playground/eportal-web2pdf:1
         ports:
-        - containerPort: 8081
+        - containerPort: 8082
