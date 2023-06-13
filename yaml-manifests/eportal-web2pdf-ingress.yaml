@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: eportal-web2pdf-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /eportal-web2pdf/(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: eportal-web2pdf-service
+                port:
+                  number: 70
+          - path: /eportal-web2pdf
+            pathType: Prefix
+            backend:
+              service:
+                name: eportal-web2pdf-service
+                port:
+                  number: 70
