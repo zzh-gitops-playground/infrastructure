@@ -7,6 +7,6 @@ spec:
     app: eportal-web2pdf
   ports:
   - name: http
-    port: 70
+    port: 80
     targetPort: 8082
   type: ClusterIP
