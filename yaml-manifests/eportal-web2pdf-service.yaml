@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: eportal-web2pdf-service
+spec:
+  selector:
+    app: eportal-web2pdf
+  ports:
+  - name: http
+    port: 70
+    targetPort: 8080
+  type: ClusterIP
