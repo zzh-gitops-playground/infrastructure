@@ -23,3 +23,4 @@ spec:
                 name: eportal-web2pdf-service
                 port:
                   number: 80
+        
